@@ -4,3 +4,9 @@
 
 <?php echo "this is nog een test"; ?>
 <?php echo "test"; ?>
+
+<?php function message(){
+    echo "Test bericht";
+}
+
+message(); ?>
