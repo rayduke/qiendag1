@@ -3,18 +3,11 @@
 
 $amount = 1000;
 
-$product = 400;
-$storting = 500;
 
-//$jojo = afschrijving(300, 15);
-//           285
-//echo $jojo;
 
-//$pizza = afschrijving($amount, 300);
-//echo $pizza;
 $amount = afschrijving($amount, 200);
 $amount = afschrijving($amount, 200);
-$amount = afschrijving($amount, 800);
+$amount = afschrijving($amount, 400);
 $amount = bijschrijving($amount, 400);
 
 echo "<br><br>TOTAAL".$amount;
@@ -29,8 +22,8 @@ function afschrijving($amount, $productprice){
         } else {
             $newamount = $amount - $productprice; 
             return $newamount;
-        }
     }
+}
 
 
 function bijschrijving($amount, $storting){

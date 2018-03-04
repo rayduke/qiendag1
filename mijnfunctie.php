@@ -36,7 +36,7 @@ $leeftijd = "16";
             if($leeftijd > 16 && $leeftijd <=18){
                 echo "0,4 promille";
             }
-        }else {
+            }else {
             echo "0.8 promille";
         }
 

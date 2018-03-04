@@ -3,14 +3,11 @@ session_start();
 $_SESSION['ab']=9;
 
 $getal1 = $_GET['getal1'];
-//echo $getal1 . "<br><br>";
+
 $getal2 = $_GET['getal2'];   
-//echo $getal2 . "<br><br> ";
-    
 
+$operator = $_GET['operator'];
 
-$operator = "optellen";
-    
 
 switch($operator) {
     
@@ -41,11 +38,20 @@ function optellen($getal1, $getal2){
     $resultaat = $getal1 + $getal2;
     return $getal1 . "+" . $getal2 . "= " . $resultaat . "<br><br>";
 }
+
+function aftrekken($getal1, $getal2){
+    $resultaat = $getal1 - $getal2;
+    return $getal1 . "-" . $getal2 . "= " . $resultaat . "<br><br>";
+}
             
 function delen($getal1, $getal2){
+    if($getal1 == 0 || $getal2 == 0){
+        echo "Error: Cannot divide by zero";
+    }else {
     $resultaat = $getal1 / $getal2;
     return $getal1 . "/" . $getal2 . "= " . $resultaat . "<br><br>";
-}         
+    }
+}      
 
 function vermenigv($getal1, $getal2){
     $resultaat = $getal1 * $getal2;
