@@ -19,7 +19,7 @@
     }    
    
     function kleurMsg(kleur){
-        alert("U heeft op "+kleur+" geklikt");
+        document.getElementById("text").innerHTML="U heeft op "+kleur+" geklikt";
     } 
 
 </script>
@@ -28,6 +28,7 @@
 <?php
 
 echo "<center>";
+echo "<p id=text></p>";
 echo "<input type=button method=GET name=kleur value=rood onclick=kleurkiezen('rood');kleurMsg('rood')>";
 echo "<input type=button method=GET name=kleur value=blauw onclick=kleurkiezen('blauw');kleurMsg('blauw')>";
 echo "<input type=button method=GET name=kleur value=geel onclick=kleurkiezen('geel');kleurMsg('geel')>";

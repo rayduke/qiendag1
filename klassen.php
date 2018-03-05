@@ -23,6 +23,19 @@ class Muziekstuk {
     public $lengte;
     
     
+    public function __construct($artiestnaam, $titelnaam, $bpm, $lengte){
+
+        $this->artiestnaam = $artiestnaam;
+        $this->titelnaam = $titelnaam;
+        $this->bpm = $bpm;
+        $this->lengte = $lengte;
+        
+        echo "Je bent nu het nummer " .$this->titelnaam." van " .$this->artiestnaam. 
+                " aan het afspelen. Het nummer is ".$this->lengte ." lang en heeft ".$this->bpm. " bpm<br><br>";
+    }
+    
+    
+    
     function afspelen(){
         echo "Je bent nu het nummer " .$this->titelnaam." van " .$this->artiestnaam. 
                 " aan het afspelen. Het nummer is ".$this->lengte ." lang en heeft ".$this->bpm. " bpm";
@@ -33,5 +46,7 @@ class Muziekstuk {
     }
     
 }
+
+
   
 
