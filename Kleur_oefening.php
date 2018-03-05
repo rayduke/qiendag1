@@ -27,13 +27,10 @@
 
 <?php
 
-
-
 echo "<center>";
-echo "<input type=button method=GET id=rood value=rood onclick=kleurkiezen('rood');kleurMsg('rood')>";
-echo "<input type=button method=GET id=blauw value=blauw onclick=kleurkiezen('blauw');kleurMsg('blauw')>";
-echo "<input type=button method=GET id=geel value=geel onclick=kleurkiezen('geel');kleurMsg('geel')>";
+echo "<input type=button method=GET name=kleur value=rood onclick=kleurkiezen('rood');kleurMsg('rood')>";
+echo "<input type=button method=GET name=kleur value=blauw onclick=kleurkiezen('blauw');kleurMsg('blauw')>";
+echo "<input type=button method=GET name=kleur value=geel onclick=kleurkiezen('geel');kleurMsg('geel')>";
 echo "<input type=text id=welkomnaam>";
 echo "</center>";
-
 ?>

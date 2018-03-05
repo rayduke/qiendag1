@@ -16,6 +16,7 @@
       <li><a href="inschrijfform.php">inschrijfform</a></li>
       <li><a href="broodzaak.php">broodzaak</a></li>
       <li><a href="kleur_oefening.php">kleur oefening</a></li>
+      <li><a href="muziekstukken.php">muziekstukken</a></li>
      </ul>
     </header>    
     <main>
